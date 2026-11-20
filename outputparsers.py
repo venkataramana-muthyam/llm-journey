@@ -11,7 +11,7 @@ prompt=PromptTemplate.from_template(
     "Act as a senior ai developer Explain this {Topic} in easy way even 5 years kid also understand what your'e explain in 30 words"
 )
 
-llm=ChatGroq(model="llama3-70b-8192", temperature=0)
+llm = ChatGroq(model="openai/gpt-oss-20b", temperature=0)
 
 parser = StrOutputParser()
 
@@ -38,8 +38,7 @@ Return only json with these keys:
 
 """
 )
-
-llm = ChatGroq(model="llama3-70b-8192", temperature=0)
+llm = ChatGroq(model="openai/gpt-oss-20b", temperature=0)
 
 parser=JsonOutputParser()
 
